@@ -21,16 +21,12 @@ export default function Navbar() {
             className={`block bg-gray-600 transition-all duration-300 ease-out h-0.5 w-8 rounded-sm ${openMenu ? "rotate-225 translate-y-1 bg-white" : ""}`}
           ></span>
           <span
-            className={`block bg-gray-600 transition-all duration-700 ease-out 
-h-0.5 w-8 rounded-sm my-0.5 ${openMenu ? "hidden" : ""}`}
+            className={`block bg-gray-600 transition-all duration-700 ease-out h-0.5 w-8 rounded-sm my-0.5 ${openMenu ? "hidden" : ""}`}
           ></span>
           <span
             className={`block bg-gray-600 transition-all duration-300 ease-out h-0.5 w-8 rounded-sm ${openMenu ? "-rotate-225 -translate-y-0.5 bg-white" : ""}`}
           ></span>
         </button>
-        {openMenu && (
-          <div className="h-screen w-full fixed bg-black opacity-80"></div>
-        )}
       </nav>
       <div
         className={`h-screen w-[300px] px-6 text-white bg-black fixed z-10 duration-500 ${openMenu ? "" : "-translate-x-64 opacity-0"}`}
